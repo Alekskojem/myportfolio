@@ -3,75 +3,142 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Портфоліо | Ім'я Прізвище</title>
+    <title>Портфоліо | Олександр Девелопер</title>
     <link rel="stylesheet" href="styles/style.css">
     </head>
 <body>
-    <header class="hero">
-        <div class="container">
-            <div class="profile-info">
-                <img src="img/your-photo.jpg" alt="Фото профілю" class="profile-pic">
-                <h1>Ім'я Прізвище</h1>
-                <p class="tagline">Ваша Посада / Спеціалізація</p>
+    <div class="resume-container">
+        
+        <header class="page-header">
+            <div class="container">
+                <span class="header-text">
+                    <span class="bold">Portfolio</span> та <span class="bold">Олександр Девелопер</span>
+                </span>
             </div>
-            <nav>
-                <ul>
-                    <li><a href="#about">Про мене</a></li>
-                    <li><a href="#experience">Досвід</a></li>
-                    <li><a href="#projects">Проєкти</a></li>
-                    <li><a href="#contact">Контакти</a></li>
-                </ul>
-            </nav>
-        </div>
-    </header>
+        </header>
 
-    <main class="container">
-        <section id="about" class="section">
-            <h2>Про мене</h2>
-            <p>Тут ви можете розмістити короткий опис себе, своїх цілей та того, що ви пропонуєте. Наприклад: "Фронтенд-розробник із 3-річним досвідом, що спеціалізується на React та сучасному CSS."</p>
-        </section>
+        <main class="content-grid">
+            
+            <aside class="left-sidebar">
+                
+                <div class="sidebar-block photo-block">
+                    <img src="img/Travolta.gif" alt="Фото профілю" class="profile-pic">
+                </div>
 
-        <section id="experience" class="section">
-            <h2>Досвід та Освіта</h2>
-            <div class="timeline">
-                <div class="timeline-item">
-                    <h3>Посада в Компанії X</h3>
-                    <p class="date">Рік - Рік</p>
-                    <p>Короткий опис ваших обов'язків та досягнень.</p>
+                <div class="sidebar-block contact-block">
+                    <p class="block-title bold vertical-text">Contacts</p>
+                    <div class="block-content">
+                        <p>Tel: +38 (0XX) XXX XX XX</p>
+                        <p>Mail: example@mail.com</p>
+                    </div>
                 </div>
-                <div class="timeline-item">
-                    <h3>Назва ВНЗ, Спеціальність</h3>
-                    <p class="date">Рік закінчення</p>
-                    <p>Ступінь (Бакалавр/Магістр).</p>
+
+                <div class="sidebar-block skills-block">
+                    <p class="block-title bold vertical-text">Tech Skills</p>
+                    <div class="block-content">
+                        <p>HTML</p>
+                        <p>CSS</p>
+                        <p>Git</p>
+                        <p>JS</p>
+                        <p>WebPack</p>
+                        <p>Nodejs</p>
+                    </div>
                 </div>
+
+                <div class="sidebar-block soft-skills-block">
+                    <p class="block-title bold vertical-text">Soft Skills</p>
+                    <div class="block-content">
+                        <p>Scrum</p>
+                        <p>Agile</p>
+                        <p>CTO</p>
+                        <p>Teamwork</p>
+                    </div>
+                </div>
+
+            </aside>
+
+            <div class="right-content">
+                
+                <section class="info-intro section">
+                    <h2 class="role-title">Front-End Developer</h2>
+                    <h1>Олександр Девелопер</h1>
+                    <p class="lorem-text">
+                        Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum. Praesent mauris. Fusce nec tellus sed augue semper porta. Mauris massa. Vestibulum lacinia arcu eget nulla. Class aptent taciti sociosqu ad litora torquent per conubia nostra, per inceptos himenaeos. 
+                    </p>
+                </section>
+                
+                <section class="section">
+                    <h2 class="main-heading">Projects:</h2>
+                    <ul class="project-list">
+                        <li>
+                            <a href="#">Назва Проєкту 1</a> 
+                            <span class="dots"></span> 
+                            <span class="tech-stack">[HTML, CSS, JS]</span>
+                        </li>
+                        <li>
+                            <a href="#">Назва Проєкту 2</a> 
+                            <span class="dots"></span> 
+                            <span class="tech-stack">[HTML, CSS, JS]</span>
+                        </li>
+                        <li>
+                            <a href="#">Назва Проєкту 3</a> 
+                            <span class="dots"></span> 
+                            <span class="tech-stack">[HTML, CSS, JS]</span>
+                        </li>
+                        <li>
+                            <a href="#">Назва Проєкту 4</a> 
+                            <span class="dots"></span> 
+                            <span class="tech-stack">[HTML, CSS, JS]</span>
+                        </li>
+                        <li>
+                            <a href="#">Назва Проєкту 5</a> 
+                            <span class="dots"></span> 
+                            <span class="tech-stack">[HTML, CSS, JS]</span>
+                        </li>
+                        <li>
+                            <a href="#">Назва Проєкту 6</a> 
+                            <span class="dots"></span> 
+                            <span class="tech-stack">[HTML, CSS, JS]</span>
+                        </li>
+                    </ul>
+                </section>
+                
+                <section class="section">
+                    <h2 class="main-heading">Work Experience:</h2>
+                    <div class="job-item">
+                        <span class="company-dot"></span> <span class="bold">Proctor&Gamble</span>
+                        <p class="job-description">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum.
+                        </p>
+                    </div>
+                    <div class="job-item">
+                        <span class="company-dot"></span> <span class="bold">Proctor&Gamble</span>
+                        <p class="job-description">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum.
+                        </p>
+                    </div>
+                    <div class="job-item">
+                        <span class="company-dot"></span> <span class="bold">Proctor&Gamble</span>
+                        <p class="job-description">
+                            Lorem ipsum dolor sit amet, consectetur adipiscing elit. Integer nec odio. Praesent libero. Sed cursus ante dapibus diam. Sed nisi. Nulla quis sem at nibh elementum imperdiet. Duis sagittis ipsum.
+                        </p>
+                    </div>
+                </section>
+
+                <section class="section last-section">
+                    <h2 class="main-heading">Education:</h2>
+                    <p class="bold">Державний Університет інформаційно-комунікаційних технологій</p>
+                    <p>Факультет інформаційних технологій, Магістр</p>
+                </section>
+
             </div>
-        </section>
+        </main>
 
-        <section id="projects" class="section">
-            <h2>Проєкти</h2>
-            <div class="project-grid">
-                <div class="project-card">
-                    <h3>Назва Проєкту 1</h3>
-                    <p>Короткий опис проєкту та технології (наприклад, HTML, CSS, JS).</p>
-                    <a href="#" target="_blank">Переглянути</a>
-                </div>
-                <div class="project-card">
-                    <h3>Назва Проєкту 2</h3>
-                    <p>Короткий опис проєкту та технології.</p>
-                    <a href="#" target="_blank">Переглянути</a>
-                </div>
-                </div>
-        </section>
-    </main>
-
-    <footer>
-        <section id="contact" class="section">
-            <h2>Контакти</h2>
-            <p>Email: <a href="mailto:example@email.com">example@email.com</a></p>
-            <p>LinkedIn: <a href="#" target="_blank">/yourprofile</a></p>
-            <p>GitHub: <a href="#" target="_blank">/yourprofile</a></p>
-        </section>
-        <p class="copy">&copy; 2024 Ім'я Прізвище. Всі права захищені.</p>
-    </footer>
+        <footer class="page-footer">
+            <div class="container">
+                <p>&copy; 2024 м. Київ | Всі права копірайта захищені | Автор сайту</p>
+            </div>
+        </footer>
+    </div>
 </body>
 </html>
