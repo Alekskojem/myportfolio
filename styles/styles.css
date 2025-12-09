@@ -1,0 +1,183 @@
+/* Основні стилі та скидання */
+:root {
+    --primary-color: #007bff; /* Основний колір (наприклад, синій) */
+    --text-color: #333;
+    --bg-color: #f4f4f9;
+    --card-bg: #fff;
+    --font-family: sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: var(--font-family);
+    line-height: 1.6;
+    color: var(--text-color);
+    background-color: var(--bg-color);
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+a {
+    color: var(--primary-color);
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+/* Секція "Hero" (Шапка) */
+.hero {
+    background-color: var(--card-bg);
+    padding: 40px 0;
+    text-align: center;
+    border-bottom: 2px solid #ddd;
+}
+
+.profile-pic {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: cover;
+    margin-bottom: 15px;
+    border: 5px solid var(--primary-color);
+}
+
+.hero h1 {
+    font-size: 2.5em;
+    margin-bottom: 5px;
+}
+
+.tagline {
+    font-style: italic;
+    color: #666;
+    margin-bottom: 20px;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: center;
+    gap: 25px;
+}
+
+nav a {
+    font-weight: bold;
+    padding: 5px 10px;
+    transition: color 0.3s;
+}
+
+nav a:hover {
+    color: var(--primary-color);
+    text-decoration: none;
+}
+
+/* Загальні стилі секцій */
+.section {
+    padding: 60px 0;
+    border-bottom: 1px solid #eee;
+}
+
+.section h2 {
+    font-size: 2em;
+    margin-bottom: 30px;
+    text-align: center;
+    color: var(--primary-color);
+}
+
+/* Стилі для проєктів */
+.project-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 20px;
+}
+
+.project-card {
+    background-color: var(--card-bg);
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.project-card:hover {
+    transform: translateY(-5px);
+}
+
+.project-card h3 {
+    color: var(--primary-color);
+    margin-bottom: 10px;
+}
+
+/* Стилі для досвіду (Timeline) */
+.timeline-item {
+    border-left: 3px solid var(--primary-color);
+    padding-left: 20px;
+    margin-bottom: 30px;
+    position: relative;
+}
+
+.timeline-item::before {
+    content: '';
+    position: absolute;
+    left: -8px;
+    top: 0;
+    width: 15px;
+    height: 15px;
+    background-color: var(--primary-color);
+    border-radius: 50%;
+}
+
+.timeline-item h3 {
+    margin-top: 0;
+}
+
+.timeline-item .date {
+    font-style: italic;
+    color: #666;
+    margin-bottom: 5px;
+}
+
+/* Футер */
+footer {
+    text-align: center;
+    padding: 30px 0;
+    background-color: #333;
+    color: #fff;
+}
+
+footer a {
+    color: #fff;
+    text-decoration: underline;
+}
+
+.copy {
+    margin-top: 15px;
+    font-size: 0.8em;
+}
+
+/* Адаптивність (для мобільних) */
+@media (max-width: 768px) {
+    .hero {
+        padding: 30px 0;
+    }
+
+    nav ul {
+        flex-direction: column;
+        gap: 10px;
+        margin-top: 15px;
+    }
+
+    .section {
+        padding: 40px 0;
+    }
+}
