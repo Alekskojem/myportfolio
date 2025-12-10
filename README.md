@@ -1,3 +1,3 @@
 # myportfolio
-Laboratory practice work 5. Create portfolio by figma free portfolio
-Prototype on Figma
+Laboratory practice work 5. Create portfolio by bootstrap/
+
